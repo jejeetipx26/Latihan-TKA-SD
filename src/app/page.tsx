@@ -721,51 +721,42 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-8 bg-white p-6 rounded-2xl shadow-sm border border-[#0F2854]/5">
             <div className="flex items-center gap-4"><div className="bg-[#0F2854] p-3 rounded-xl text-[#FFF8DE]"><Crown className="w-6 h-6" /></div><div><h1 className="text-2xl font-bold text-[#0F2854]">Dashboard Guru</h1><p className="text-sm text-[#0F2854]/60">Admin: {currentUser?.name}</p></div></div>
-            <div
+            <button
+                onClick={fetchTeacherData}
                 className="
-    grid grid-cols-2 gap-3
-    sm:flex sm:gap-3
-    w-full sm:w-auto
+    flex items-center justify-center
+    w-12 h-12
+    rounded-xl
+    bg-[#FFF8DE] text-[#0F2854]
+    border border-[#0F2854]/20
+    hover:bg-[#0F2854] hover:text-[#FFF8DE]
+    transition
+    active:scale-95
   "
+                aria-label="Refresh"
             >
-              {/* Refresh */}
-              <button
-                  onClick={fetchTeacherData}
-                  className="
-      w-full sm:w-auto
-      flex items-center justify-center gap-2
-      px-4 py-3
-      rounded-xl
-      bg-[#FFF8DE] text-[#0F2854]
-      border border-[#0F2854]/20
-      hover:bg-[#0F2854] hover:text-[#FFF8DE]
-      transition
-    "
-                  aria-label="Refresh"
-              >
-                <RefreshCcw
-                    className={`w-5 h-5 ${isLoadingData ? "animate-spin" : ""}`}
-                />
-              </button>
-
-              {/* Logout */}
-              <button
-                  onClick={handleLogout}
-                  className="
-      w-full sm:w-auto
-      flex items-center justify-center
-      px-4 py-3
-      rounded-xl
-      bg-red-50 text-red-600
-      border border-red-100
-      hover:bg-red-100
-      transition
-    "
-                  aria-label="Logout"
-              >
-                <LogOut className="w-5 h-5" />
-              </button>
-            </div>
+              <RefreshCcw
+                  className={`w-5 h-5 ${isLoadingData ? "animate-spin" : ""}`}
+              />
+            </button>
+            <button
+                onClick={handleLogout}
+                className="
+    fixed bottom-4 right-4
+    z-50
+    w-14 h-14
+    rounded-full
+    bg-red-500 text-white
+    shadow-lg
+    flex items-center justify-center
+    hover:bg-red-600
+    transition
+    active:scale-95
+  "
+                aria-label="Logout"
+            >
+              <LogOut className="w-6 h-6" />
+            </button>
 
 
           </div>
