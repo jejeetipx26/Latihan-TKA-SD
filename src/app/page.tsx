@@ -187,7 +187,7 @@ export default function App() {
       else setUserAnswers({ ...userAnswers, [qId]: [...current, value] });
     } else if (qType === 'bs_complex') {
       const current = userAnswers[qId] || {};
-      setUserAnswers({ ...userAnswers, [qId]: { ...current, [subIndex]: value } });
+      setUserAnswers({ ...userAnswers, [qId]: { ...current, [subIndex as number]: value } });
     } else {
       setUserAnswers({ ...userAnswers, [qId]: value });
     }
@@ -673,10 +673,10 @@ export default function App() {
             <div className="bg-white p-6 rounded-[20px] shadow-sm border border-[#0F2854]/5">
               <h2 className="text-xl font-bold text-[#0F2854] mb-6 leading-relaxed">{q.question}</h2>
               <div className="space-y-3">
-                {q.type === 'single' && q.options.map((opt, idx) => (
+                {q.options && q.type === 'single' && q.options.map((opt, idx) => (
                     <button key={idx} onClick={() => handleAnswer(q.id, opt)} className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center gap-4 ${userAnswers[q.id] === opt ? 'border-[#0F2854] bg-[#0F2854] text-[#FFF8DE]' : 'border-[#0F2854]/10 bg-white text-[#0F2854] hover:bg-[#FFF8DE]'}`}><div className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm ${userAnswers[q.id] === opt ? 'bg-[#FFF8DE] text-[#0F2854]' : 'bg-[#0F2854]/10 text-[#0F2854]'}`}>{String.fromCharCode(65 + idx)}</div><span className="font-medium text-sm">{opt}</span></button>
                 ))}
-                {q.type === 'multiple' && q.options.map((opt, idx) => {
+                {q.options && q.type === 'multiple' && q.options.map((opt, idx) => {
                   const isSel = userAnswers[q.id]?.includes(opt);
                   return (<button key={idx} onClick={() => handleAnswer(q.id, opt)} className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex justify-between items-center ${isSel ? 'border-[#0F2854] bg-[#0F2854] text-[#FFF8DE]' : 'border-[#0F2854]/10 bg-white text-[#0F2854] hover:bg-[#FFF8DE]'}`}><span className="font-medium text-sm">{opt}</span><div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${isSel ? 'border-[#FFF8DE] bg-transparent' : 'border-[#0F2854]/20'}`}>{isSel && <div className="w-3 h-3 bg-[#FFF8DE] rounded-full"></div>}</div></button>)
                 })}
