@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Tabel untuk menyimpan Data User (Siswa & Guru)
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  role      String   @default("SISWA") // Bisa "SISWA" atau "GURU"
+  createdAt DateTime @default(now())
+}
+
+// Tabel untuk menyimpan Nilai Ujian
+model Result {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String // Tambah email biar tahu nilai siapa
+  grade     String
+  subject   String
+  score     Int
+  createdAt DateTime @default(now())
+}
