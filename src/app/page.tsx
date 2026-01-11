@@ -135,7 +135,7 @@ const QUESTIONS_DAY1 = [
   }
 ];
 
-// --- DATA SOAL HARI 2 (BARU) ---
+// --- DATA SOAL HARI 2 (TETAP SAMA) ---
 const QUESTIONS_DAY2 = [
   // A. Pilihan Ganda Sederhana (1-7)
   {
@@ -250,6 +250,120 @@ const QUESTIONS_DAY2 = [
   }
 ];
 
+// --- DATA SOAL HARI 3 (BARU) ---
+const QUESTIONS_DAY3 = [
+  // A. Pilihan Ganda Sederhana (1-7)
+  {
+    id: 1, type: 'single',
+    question: "Pecahan yang senilai dengan 1/2 adalah …",
+    options: ["2/3", "2/4", "3/5", "3/4"],
+    correctAnswer: "2/4",
+    discussion: "1/2 jika dikalikan 2 (atas dan bawah) menjadi 2/4."
+  },
+  {
+    id: 2, type: 'single',
+    question: "Pecahan senilai dari 2/3 adalah …",
+    options: ["3/4", "4/6", "6/5", "3/6"],
+    correctAnswer: "4/6",
+    discussion: "2/3 jika dikalikan 2 menjadi 4/6."
+  },
+  {
+    id: 3, type: 'single',
+    question: "Bentuk paling sederhana dari 6/8 adalah …",
+    options: ["2/4", "3/4", "4/6", "1/2"],
+    correctAnswer: "3/4",
+    discussion: "6 dan 8 sama-sama dibagi 2 hasilnya 3/4."
+  },
+  {
+    id: 4, type: 'single',
+    question: "Bentuk paling sederhana dari 10/20 adalah …",
+    options: ["2/4", "1/4", "1/2", "2/5"],
+    correctAnswer: "1/2",
+    discussion: "10 dan 20 sama-sama dibagi 10 hasilnya 1/2."
+  },
+  {
+    id: 5, type: 'single',
+    question: "Jika pembilang dan penyebut dikalikan dengan bilangan yang sama, maka pecahan tersebut akan menjadi …",
+    options: ["Pecahan lebih besar", "Pecahan lebih kecil", "Pecahan senilai", "Pecahan tidak berubah"],
+    correctAnswer: "Pecahan senilai",
+    discussion: "Definisi pecahan senilai adalah mengalikan/membagi dengan angka sama."
+  },
+  {
+    id: 6, type: 'single',
+    question: "Pecahan 3/6 jika disederhanakan menjadi …",
+    options: ["3/6", "2/3", "1/2", "1/3"],
+    correctAnswer: "1/2",
+    discussion: "3 dan 6 sama-sama dibagi 3 hasilnya 1/2."
+  },
+  {
+    id: 7, type: 'single',
+    question: "Andi memakan 4 dari 12 potong kue. Pecahan paling sederhana dari kue yang dimakan Andi adalah …",
+    options: ["4/12", "3/6", "2/6", "1/3"],
+    correctAnswer: "1/3",
+    discussion: "4/12 disederhanakan (bagi 4) menjadi 1/3."
+  },
+
+  // B. Pilihan Ganda Kompleks (8-11)
+  {
+    id: 8, type: 'multiple',
+    question: "Pilih SEMUA pecahan yang senilai dengan 1/2!",
+    options: ["2/4", "3/6", "2/3", "4/8"],
+    correctAnswer: ["2/4", "3/6", "4/8"],
+    discussion: "2/4, 3/6, dan 4/8 semuanya bernilai setengah."
+  },
+  {
+    id: 9, type: 'multiple',
+    question: "Pecahan berikut yang dapat disederhanakan adalah …",
+    options: ["6/9", "3/5", "8/12", "4/4"],
+    correctAnswer: ["6/9", "8/12", "4/4"],
+    discussion: "3/5 sudah paling sederhana. Sisanya bisa disederhanakan."
+  },
+  {
+    id: 10, type: 'multiple',
+    question: "Hasil penyederhanaan yang benar adalah …",
+    options: ["6/8 = 3/4", "10/20 = 1/2", "9/12 = 3/5", "4/6 = 2/3"],
+    correctAnswer: ["6/8 = 3/4", "10/20 = 1/2", "4/6 = 2/3"],
+    discussion: "9/12 seharusnya 3/4 (bukan 3/5)."
+  },
+  {
+    id: 11, type: 'multiple',
+    question: "Berikut ini yang merupakan pecahan senilai adalah …",
+    options: ["2/3 dan 4/6", "1/4 dan 2/8", "3/5 dan 6/10", "2/5 dan 4/9"],
+    correctAnswer: ["2/3 dan 4/6", "1/4 dan 2/8", "3/5 dan 6/10"],
+    discussion: "2/5 tidak senilai dengan 4/9."
+  },
+
+  // C. Kategori (12-15)
+  {
+    id: 12, type: 'single',
+    question: "Mengubah 6/8 menjadi 3/4 termasuk …",
+    options: ["Pecahan senilai", "Menyederhanakan pecahan"],
+    correctAnswer: "Menyederhanakan pecahan",
+    discussion: "Karena angkanya menjadi lebih kecil."
+  },
+  {
+    id: 13, type: 'single',
+    question: "Mengubah 2/3 menjadi 4/6 termasuk …",
+    options: ["Pecahan senilai", "Menyederhanakan pecahan"],
+    correctAnswer: "Pecahan senilai",
+    discussion: "Karena angkanya menjadi lebih besar (dikali)."
+  },
+  {
+    id: 14, type: 'single',
+    question: "Mengubah 10/20 menjadi 1/2 termasuk …",
+    options: ["Pecahan senilai", "Menyederhanakan pecahan"],
+    correctAnswer: "Menyederhanakan pecahan",
+    discussion: "Dibagi FPB, jadi sederhana."
+  },
+  {
+    id: 15, type: 'single',
+    question: "Mengubah 3/5 menjadi 6/10 termasuk …",
+    options: ["Pecahan senilai", "Menyederhanakan pecahan"],
+    correctAnswer: "Pecahan senilai",
+    discussion: "Dikali 2, jadi pecahan senilai."
+  }
+];
+
 
 export default function App() {
   const [screen, setScreen] = useState('login');
@@ -298,6 +412,7 @@ export default function App() {
   const handleSelectDayForQuiz = (day: number) => {
     if (day === 1) setActiveQuestions(QUESTIONS_DAY1);
     else if (day === 2) setActiveQuestions(QUESTIONS_DAY2);
+    else if (day === 3) setActiveQuestions(QUESTIONS_DAY3); // Added day 3
 
     setSelectedDay(day);
     startQuiz();
@@ -586,13 +701,22 @@ export default function App() {
             <ArrowRight className="text-[#0F2854]/30 group-hover:text-[#0F2854] transition-colors" />
           </button>
 
-          {/* Tombol Hari 3 dst (Terkunci) */}
-          <button disabled className="w-full text-left p-6 rounded-[24px] bg-gray-100 border border-transparent opacity-60 cursor-not-allowed flex items-center gap-6">
-            <div className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg bg-gray-300 text-gray-500">3</div>
+          {/* Tombol Hari 3 */}
+          <button
+              onClick={() => {
+                if (contentType === 'material') { setSelectedDay(3); setScreen('material'); }
+                else { handleSelectDayForQuiz(3); }
+              }}
+              className="w-full text-left p-6 rounded-[24px] bg-white border border-[#0F2854]/5 shadow-sm transition-all duration-300 flex items-center gap-6 group hover:shadow-lg hover:border-[#0F2854]/30 hover:-translate-y-1"
+          >
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg transition-colors bg-[#FFF8DE] text-[#0F2854] group-hover:bg-[#0F2854] group-hover:text-[#FFF8DE]">3</div>
             <div className="flex-1">
-              <h3 className="text-lg font-bold text-gray-500 mb-1">Hari 3: Pecahan</h3>
-              <p className="text-xs opacity-60 font-medium text-gray-500">Coming Soon</p>
+              <h3 className="text-lg font-bold mb-1 text-[#0F2854]">Hari 3: Konsep Dasar Pecahan</h3>
+              <p className="text-xs opacity-60 font-medium text-[#0F2854]">
+                Pengertian, Senilai, Sederhana, Soal Cerita
+              </p>
             </div>
+            <ArrowRight className="text-[#0F2854]/30 group-hover:text-[#0F2854] transition-colors" />
           </button>
         </div>
       </div>
@@ -925,6 +1049,157 @@ export default function App() {
       </>
   );
 
+  // --- KONTEN HARI 3 (BARU) ---
+  const renderMaterialDay3 = () => (
+      <>
+        <section>
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">1. Pengertian Pecahan</h3>
+          <p className="text-[#0F2854]/80 text-base leading-relaxed mb-4">
+            Pecahan adalah bilangan yang menyatakan bagian dari keseluruhan.
+          </p>
+          <div className="bg-white p-6 rounded-xl border border-[#0F2854]/10 text-center shadow-sm">
+            <p className="text-sm text-[#0F2854]/70 mb-2">Contoh: 1 buah kue dibagi menjadi 4 bagian sama besar. Jika diambil 1 bagian, ditulis:</p>
+            <div className="inline-block bg-[#FFF8DE] px-8 py-4 rounded-lg border border-[#0F2854]/20">
+              <span className="text-3xl font-bold text-[#0F2854]">1/4</span>
+            </div>
+            <div className="mt-4 text-left grid gap-2 max-w-md mx-auto">
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-[#0F2854]">📌 Pembilang</span>
+                <span className="text-sm text-[#0F2854]/70">→ angka atas (menunjukkan bagian yang diambil)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-[#0F2854]">📌 Penyebut</span>
+                <span className="text-sm text-[#0F2854]/70">→ angka bawah (menunjukkan jumlah bagian seluruhnya)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">2. Pecahan Senilai</h3>
+
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm mb-6">
+            <h4 className="font-bold text-[#0F2854] mb-2">🔹 Apa itu Pecahan Senilai?</h4>
+            <p className="text-[#0F2854]/80 text-sm mb-3">
+              Pecahan senilai adalah pecahan yang nilainya sama, walaupun angka pembilang dan penyebutnya berbeda.
+            </p>
+            <div className="bg-[#FFF8DE] p-4 rounded-lg text-center font-bold text-[#0F2854] text-lg">
+              1/2 = 2/4 = 3/6
+            </div>
+            <p className="text-xs text-center mt-2 text-[#0F2854]/60">Walaupun bentuknya berbeda, nilainya tetap sama.</p>
+          </div>
+
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+            <h4 className="font-bold text-[#0F2854] mb-2">🔹 Cara Menentukan Pecahan Senilai</h4>
+            <p className="text-sm text-[#0F2854]/80 mb-4">Caranya dengan mengalikan pembilang dan penyebut dengan bilangan yang sama.</p>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-[#FFF8DE]/50 p-4 rounded-lg border border-[#0F2854]/5">
+                <p className="font-bold text-[#0F2854] mb-2">Contoh 1:</p>
+                <div className="text-sm text-[#0F2854]">
+                  1/2 dikali 2 <br/>
+                  (1 × 2) / (2 × 2) = <strong>2/4</strong>
+                </div>
+              </div>
+              <div className="bg-[#FFF8DE]/50 p-4 rounded-lg border border-[#0F2854]/5">
+                <p className="font-bold text-[#0F2854] mb-2">Contoh 2:</p>
+                <div className="text-sm text-[#0F2854]">
+                  1/2 dikali 3 <br/>
+                  (1 × 3) / (2 × 3) = <strong>3/6</strong>
+                </div>
+              </div>
+            </div>
+            <p className="mt-3 text-xs font-bold text-red-500 bg-red-50 inline-block px-2 py-1 rounded">📌 Ingat: Yang dikalikan harus sama (atas dan bawah).</p>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">3. Menyederhanakan Pecahan</h3>
+          <div className="bg-[#0F2854] text-[#FFF8DE] p-6 rounded-xl shadow-lg mb-6">
+            <h4 className="font-bold text-lg mb-2">🔹 Konsep Penyederhanaan</h4>
+            <p className="text-sm opacity-90">
+              Menyederhanakan pecahan artinya mengubah pecahan menjadi bentuk paling kecil, tetapi nilainya tetap sama.
+              <br/><br/>
+              <strong>Caranya:</strong><br/>
+              1. Cari FPB (Faktor Persekutuan Terbesar) dari pembilang dan penyebut<br/>
+              2. Bagi pembilang dan penyebut dengan FPB tersebut
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854]">📝 Contoh 1: Sederhanakan 6/8</h4>
+              <div className="bg-[#FFF8DE] p-3 rounded-lg mt-2 text-sm text-[#0F2854] space-y-1">
+                <p>Faktor 6 = 1, 2, 3, 6</p>
+                <p>Faktor 8 = 1, 2, 4, 8</p>
+                <p className="font-bold">FPB = 2</p>
+                <div className="my-2 border-t border-[#0F2854]/10 pt-2">
+                  6 ÷ 2 = 3<br/>
+                  8 ÷ 2 = 4
+                </div>
+                <p className="font-bold text-green-700">✅ Bentuk sederhana = 3/4</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854]">📝 Contoh 2: Sederhanakan 10/20</h4>
+              <div className="bg-[#FFF8DE] p-3 rounded-lg mt-2 text-sm text-[#0F2854] space-y-1">
+                <p className="font-bold">FPB dari 10 dan 20 adalah 10</p>
+                <div className="my-2 border-t border-[#0F2854]/10 pt-2">
+                  10 ÷ 10 = 1<br/>
+                  20 ÷ 10 = 2
+                </div>
+                <p className="font-bold text-green-700">✅ Bentuk sederhana = 1/2</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">4. Hubungan Pecahan Senilai dan Penyederhanaan</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded-xl border border-[#0F2854]/10 shadow-sm text-center">
+              <span className="block text-3xl mb-2">✖️</span>
+              <h4 className="font-bold text-[#0F2854]">Pecahan Senilai</h4>
+              <p className="text-xs text-[#0F2854]/60">Diperoleh dengan mengalikan</p>
+            </div>
+            <div className="bg-white p-4 rounded-xl border border-[#0F2854]/10 shadow-sm text-center">
+              <span className="block text-3xl mb-2">➗</span>
+              <h4 className="font-bold text-[#0F2854]">Penyederhanaan</h4>
+              <p className="text-xs text-[#0F2854]/60">Dilakukan dengan membagi</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">5. Contoh Soal Cerita</h3>
+          <div className="bg-[#FFF8DE]/50 p-6 rounded-2xl border border-[#0F2854]/10">
+            <p className="text-sm text-[#0F2854]/70 mb-4 font-style-italic">
+              Satu pizza dipotong menjadi 8 bagian sama besar. Andi memakan 4 potong pizza.
+            </p>
+            <div className="bg-white p-4 rounded-xl border border-[#0F2854]/5 text-sm space-y-2">
+              <p className="font-bold text-[#0F2854]">Penyelesaian:</p>
+              <ul className="list-disc list-inside text-[#0F2854]/80 ml-2">
+                <li>Pecahan pizza yang dimakan: <strong>4/8</strong></li>
+                <li>Disederhanakan (dibagi 4): <strong>1/2</strong></li>
+              </ul>
+              <p className="mt-2 font-bold text-green-600 bg-green-50 inline-block px-3 py-1 rounded">✅ Kesimpulan: Andi memakan setengah pizza.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0F2854] text-[#FFF8DE] p-6 rounded-2xl shadow-lg mt-8">
+          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">🧠 Ringkasan Materi</h3>
+          <ul className="list-disc list-inside space-y-2 text-sm opacity-90">
+            <li>Pecahan adalah bagian dari keseluruhan.</li>
+            <li><strong>Pecahan senilai</strong> memiliki nilai yang sama (didapat dengan mengalikan).</li>
+            <li><strong>Penyederhanaan</strong> pecahan dilakukan dengan membagi menggunakan FPB.</li>
+            <li>Bentuk paling kecil disebut pecahan sederhana.</li>
+          </ul>
+        </section>
+      </>
+  );
+
   const renderMaterial = () => (
       <div className="min-h-screen bg-white font-sans">
         <div className="bg-[#0F2854] px-6 py-4 text-[#FFF8DE] flex items-center gap-4 sticky top-0 z-20 shadow-md">
@@ -936,9 +1211,15 @@ export default function App() {
           </h2>
         </div>
         <div className="max-w-3xl mx-auto p-8 pb-24 space-y-10">
-          {selectedDay === 1 ? renderMaterialDay1() : renderMaterialDay2()}
+          {selectedDay === 1 && renderMaterialDay1()}
+          {selectedDay === 2 && renderMaterialDay2()}
+          {selectedDay === 3 && renderMaterialDay3()}
         </div>
-        <div className="fixed bottom-0 w-full bg-white border-t border-[#0F2854]/10 p-4 z-20"><div className="max-w-3xl mx-auto"><button onClick={() => handleSelectDayForQuiz(selectedDay)} className="w-full bg-[#0F2854] text-[#FFF8DE] py-4 rounded-xl font-bold hover:opacity-90 transition shadow-lg">LANJUT KE LATIHAN SOAL HARI {selectedDay}</button></div></div>
+        <div className="fixed bottom-0 w-full bg-white border-t border-[#0F2854]/10 p-4 z-20">
+          <div className="max-w-3xl mx-auto">
+            <button onClick={() => handleSelectDayForQuiz(selectedDay)} className="w-full bg-[#0F2854] text-[#FFF8DE] py-4 rounded-xl font-bold hover:opacity-90 transition shadow-lg">LANJUT KE LATIHAN SOAL HARI {selectedDay}</button>
+          </div>
+        </div>
       </div>
   );
 
