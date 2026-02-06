@@ -214,7 +214,7 @@ const QUESTIONS_DAY2 = [
     id: 11, type: 'multiple',
     question: "Faktor persekutuan dari 12 dan 18 adalah …",
     options: ["1", "2", "3", "6"],
-    correctAnswer: ["1", "3", "6"], // Sesuai request user (A, C, D)
+    correctAnswer: ["1", "3", "6"],
     discussion: "Faktor yang sama dari 12 dan 18."
   },
 
@@ -250,7 +250,7 @@ const QUESTIONS_DAY2 = [
   }
 ];
 
-// --- DATA SOAL HARI 3 (BARU) ---
+// --- DATA SOAL HARI 3 (TETAP SAMA) ---
 const QUESTIONS_DAY3 = [
   // A. Pilihan Ganda Sederhana (1-7)
   {
@@ -364,6 +364,258 @@ const QUESTIONS_DAY3 = [
   }
 ];
 
+// --- DATA SOAL HARI 4 (TETAP SAMA) ---
+const QUESTIONS_DAY4 = [
+  // A. Pilihan Ganda Sederhana (1-7)
+  {
+    id: 1, type: 'single',
+    question: "Tanda yang tepat untuk membandingkan pecahan 3/8 dan 5/8 adalah …",
+    options: ["3/8 > 5/8", "3/8 < 5/8", "3/8 = 5/8", "5/8 < 3/8"],
+    correctAnswer: "3/8 < 5/8",
+    discussion: "Jika penyebut sama, bandingkan pembilang. 3 < 5, jadi 3/8 < 5/8."
+  },
+  {
+    id: 2, type: 'single',
+    question: "Pecahan yang lebih besar antara 1/2 dan 1/3 adalah …",
+    options: ["1/2", "1/3", "Sama besar", "Tidak bisa dibandingkan"],
+    correctAnswer: "1/2",
+    discussion: "Samakan penyebut: 1/2 = 3/6, 1/3 = 2/6. 3/6 > 2/6, jadi 1/2 > 1/3."
+  },
+  {
+    id: 2, type: 'single',
+    question: "Urutan pecahan dari terkecil ke terbesar: 1/4, 1/2, 3/4 adalah …",
+    options: ["1/2, 1/4, 3/4", "3/4, 1/2, 1/4", "1/4, 1/2, 3/4", "1/4, 3/4, 1/2"],
+    correctAnswer: "1/4, 1/2, 3/4",
+    discussion: "Samakan penyebut (KPK 4): 1/4 = 1/4, 1/2 = 2/4, 3/4 = 3/4. Urutan: 1/4, 2/4, 3/4."
+  },
+  {
+    id: 4, type: 'single',
+    question: "Pecahan mana yang lebih kecil: 2/3 atau 3/4?",
+    options: ["2/3", "3/4", "Sama besar", "Tidak bisa dibandingkan"],
+    correctAnswer: "2/3",
+    discussion: "Perkalian silang: 2×4=8, 3×3=9. Karena 8 < 9, maka 2/3 < 3/4."
+  },
+  {
+    id: 5, type: 'single',
+    question: "Jika penyebut dua pecahan sama, maka perbandingan didasarkan pada …",
+    options: ["Pembilang", "Penyebut", "KPK", "FPB"],
+    correctAnswer: "Pembilang",
+    discussion: "Penyebut sama berarti satuan sama, tinggal bandingkan pembilang."
+  },
+  {
+    id: 6, type: 'single',
+    question: "Untuk membandingkan 2/5 dan 3/7, langkah pertama adalah …",
+    options: ["Samakan penyebut", "Samakan pembilang", "Kalikan silang", "Cari FPB"],
+    correctAnswer: "Samakan penyebut",
+    discussion: "Cara paling umum adalah menyamakan penyebut dengan KPK."
+  },
+  {
+    id: 7, type: 'single',
+    question: "Urutan dari terbesar ke terkecil: 2/3, 1/6, 5/6 adalah …",
+    options: ["5/6, 2/3, 1/6", "1/6, 2/3, 5/6", "2/3, 5/6, 1/6", "5/6, 1/6, 2/3"],
+    correctAnswer: "5/6, 2/3, 1/6",
+    discussion: "Samakan penyebut (KPK 6): 2/3=4/6, 1/6=1/6, 5/6=5/6. Urutan terbesar: 5/6, 4/6, 1/6."
+  },
+
+  // B. Pilihan Ganda Kompleks (8-11)
+  {
+    id: 8, type: 'multiple',
+    question: "Pilih SEMUA pernyataan yang BENAR tentang membandingkan pecahan!",
+    options: ["Penyebut sama → bandingkan pembilang", "Pembilang sama → bandingkan penyebut", "Penyebut besar → pecahan besar", "Untuk membandingkan harus menyamakan penyebut"],
+    correctAnswer: ["Penyebut sama → bandingkan pembilang", "Pembilang sama → bandingkan penyebut", "Untuk membandingkan harus menyamakan penyebut"],
+    discussion: "Penyebut besar belum tentu pecahan besar (misal 1/10 < 1/4)."
+  },
+  {
+    id: 9, type: 'multiple',
+    question: "Pilih SEMUA pecahan yang lebih kecil dari 1/2!",
+    options: ["1/3", "2/5", "3/4", "1/4"],
+    correctAnswer: ["1/3", "2/5", "1/4"],
+    discussion: "1/2 = 0,5. 1/3≈0,33, 2/5=0,4, 1/4=0,25 (semua < 0,5). 3/4=0,75 (>0,5)."
+  },
+  {
+    id: 10, type: 'multiple',
+    question: "Manakah pasangan pecahan yang benar urutannya dari terkecil ke terbesar?",
+    options: ["1/4, 1/2, 3/4", "1/3, 2/3, 1/6", "2/5, 3/5, 4/5", "3/8, 5/8, 1/8"],
+    correctAnswer: ["1/4, 1/2, 3/4", "2/5, 3/5, 4/5"],
+    discussion: "Pilihan B seharusnya 1/6, 1/3, 2/3. Pilihan D seharusnya 1/8, 3/8, 5/8."
+  },
+  {
+    id: 11, type: 'multiple',
+    question: "Pilih SEMUA cara yang benar untuk membandingkan 3/4 dan 4/5!",
+    options: ["Samakan penyebut jadi 20", "Perkalian silang: 3×5 dan 4×4", "Ubah ke desimal", "Cari FPB"],
+    correctAnswer: ["Samakan penyebut jadi 20", "Perkalian silang: 3×5 dan 4×4", "Ubah ke desimal"],
+    discussion: "FPB digunakan untuk menyederhanakan, bukan membandingkan."
+  },
+
+  // C. Kategori (12-15)
+  {
+    id: 12, type: 'single',
+    question: "Membandingkan 2/3 dan 3/4 dengan menyamakan penyebut termasuk cara …",
+    options: ["Langkah sistematis", "Cara cepat", "Perkalian silang", "Tidak direkomendasikan"],
+    correctAnswer: "Langkah sistematis",
+    discussion: "Menyamakan penyebut adalah langkah sistematis yang diajarkan."
+  },
+  {
+    id: 13, type: 'single',
+    question: "Ketika penyebut sama, kita membandingkan …",
+    options: ["Pembilang", "Penyebut", "Kedua-duanya", "Tidak perlu membandingkan"],
+    correctAnswer: "Pembilang",
+    discussion: "Penyebut sama berarti satuan sama, cukup bandingkan pembilang."
+  },
+  {
+    id: 14, type: 'single',
+    question: "Untuk mengurutkan 1/2, 1/3, 1/4 dari terkecil, langkah pertama adalah …",
+    options: ["Samakan penyebut", "Samakan pembilang", "Kalikan semua", "Lihat pembilang saja"],
+    correctAnswer: "Samakan penyebut",
+    discussion: "Penyebut berbeda, harus disamakan dulu untuk membandingkan."
+  },
+  {
+    id: 15, type: 'single',
+    question: "Pecahan 1/10 dan 1/4, manakah yang lebih besar?",
+    options: ["1/4", "1/10", "Sama besar", "Tidak bisa dibandingkan"],
+    correctAnswer: "1/4",
+    discussion: "Pembilang sama (1), penyebut lebih kecil (4) berarti pecahan lebih besar. 1/4 > 1/10."
+  }
+];
+
+// --- DATA SOAL HARI 4 BARU (DITAMBAHKAN) ---
+const QUESTIONS_DAY4_NEW = [
+  // A. Pilihan Ganda Sederhana (1-7)
+  {
+    id: 1, type: 'single',
+    question: "Pecahan yang lebih besar adalah 3/4 dan 2/4 ...",
+    options: ["2/4", "3/4", "Sama besar", "Tidak bisa dibandingkan"],
+    correctAnswer: "3/4",
+    discussion: "Penyebut sama (4), bandingkan pembilang: 3 > 2, jadi 3/4 > 2/4."
+  },
+  {
+    id: 2, type: 'single',
+    question: "Pecahan yang lebih kecil adalah 1/5 dan 1/3 ...",
+    options: ["1/5", "1/3", "Sama besar", "Tidak bisa dibandingkan"],
+    correctAnswer: "1/5",
+    discussion: "Pembilang sama (1), bandingkan penyebut: 5 > 3, jadi 1/5 < 1/3."
+  },
+  {
+    id: 3, type: 'single',
+    question: "Tanda yang tepat untuk perbandingan berikut adalah: 4/6 □ 2/6",
+    options: [">", "<", "=", "÷"],
+    correctAnswer: ">",
+    discussion: "Penyebut sama (6), bandingkan pembilang: 4 > 2, jadi 4/6 > 2/6."
+  },
+  {
+    id: 4, type: 'single',
+    question: "Manakah yang lebih besar? 2/3 dan 3/5",
+    options: ["2/3", "3/5", "Sama besar", "Tidak bisa ditentukan"],
+    correctAnswer: "2/3",
+    discussion: "Samakan penyebut (KPK 15): 2/3 = 10/15, 3/5 = 9/15. 10/15 > 9/15, jadi 2/3 > 3/5."
+  },
+  {
+    id: 5, type: 'single',
+    question: "Urutan yang benar dari terkecil ke terbesar adalah: 1/4, 3/4, 2/4",
+    options: [
+      "3/4, 2/4, 1/4",
+      "1/4, 2/4, 3/4",
+      "2/4, 1/4, 3/4",
+      "2/4, 3/4, 1/4"
+    ],
+    correctAnswer: "1/4, 2/4, 3/4",
+    discussion: "Penyebut sama (4), urutkan pembilang dari kecil ke besar: 1/4, 2/4, 3/4."
+  },
+  {
+    id: 6, type: 'single',
+    question: "Pecahan terbesar dari kumpulan berikut adalah: 1/2, 1/3, 1/4",
+    options: ["1/4", "1/3", "1/2", "Sama besar"],
+    correctAnswer: "1/2",
+    discussion: "Pembilang sama (1), bandingkan penyebut: penyebut terkecil (2) berarti pecahan terbesar, jadi 1/2."
+  },
+  {
+    id: 7, type: 'single',
+    question: "Urutan yang benar dari terbesar ke terkecil adalah: 3/5, 1/5, 4/5",
+    options: [
+      "1/5, 3/5, 4/5",
+      "4/5, 3/5, 1/5",
+      "3/5, 4/5, 1/5",
+      "4/5, 1/5, 3/5"
+    ],
+    correctAnswer: "4/5, 3/5, 1/5",
+    discussion: "Penyebut sama (5), urutkan pembilang dari besar ke kecil: 4/5, 3/5, 1/5."
+  },
+
+  // B. Pilihan Ganda Kompleks (8-11)
+  {
+    id: 8, type: 'multiple',
+    question: "Pilih SEMUA perbandingan yang benar!",
+    options: [
+      "1/2 > 1/3",
+      "2/4 = 1/2",
+      "3/5 < 1/5",
+      "4/6 > 3/6"
+    ],
+    correctAnswer: ["1/2 > 1/3", "2/4 = 1/2", "4/6 > 3/6"],
+    discussion: "1/2 > 1/3 (benar), 2/4 = 1/2 (benar, karena 2/4 disederhanakan jadi 1/2), 3/5 < 1/5 (salah, 3/5 > 1/5), 4/6 > 3/6 (benar)."
+  },
+  {
+    id: 9, type: 'multiple',
+    question: "Pecahan berikut jika diurutkan dari terkecil ke terbesar yang benar adalah ...",
+    options: [
+      "1/6, 3/6, 5/6",
+      "5/6, 3/6, 1/6",
+      "3/6, 1/6, 5/6",
+      "1/6, 5/6, 3/6"
+    ],
+    correctAnswer: ["1/6, 3/6, 5/6"],
+    discussion: "Penyebut sama (6), urutkan pembilang: 1/6, 3/6, 5/6."
+  },
+  {
+    id: 10, type: 'multiple',
+    question: "Manakah pasangan pecahan yang NILAINYA sama?",
+    options: [
+      "1/2 dan 2/4",
+      "2/3 dan 3/4",
+      "3/6 dan 1/2",
+      "4/5 dan 2/5"
+    ],
+    correctAnswer: ["1/2 dan 2/4", "3/6 dan 1/2"],
+    discussion: "1/2 = 2/4 (benar), 2/3 ≠ 3/4 (salah), 3/6 = 1/2 (benar), 4/5 ≠ 2/5 (salah)."
+  },
+  {
+    id: 11, type: 'multiple',
+    question: "Pecahan yang lebih kecil dari 1/2 adalah ...",
+    options: ["1/3", "2/3", "1/4", "3/4"],
+    correctAnswer: ["1/3", "1/4"],
+    discussion: "1/2 = 0.5. 1/3 ≈ 0.33 (<0.5), 2/3 ≈ 0.67 (>0.5), 1/4 = 0.25 (<0.5), 3/4 = 0.75 (>0.5)."
+  },
+
+  // C. Pilihan Ganda Kompleks Kategori (12-15)
+  {
+    id: 12, type: 'single',
+    question: "Menentukan tanda > atau < antara dua pecahan termasuk ...",
+    options: ["Membandingkan pecahan", "Mengurutkan pecahan"],
+    correctAnswer: "Membandingkan pecahan",
+    discussion: "Menentukan tanda > atau < adalah kegiatan membandingkan dua pecahan."
+  },
+  {
+    id: 13, type: 'single',
+    question: "Menyusun beberapa pecahan dari terkecil ke terbesar termasuk ...",
+    options: ["Membandingkan pecahan", "Mengurutkan pecahan"],
+    correctAnswer: "Mengurutkan pecahan",
+    discussion: "Menyusun beberapa pecahan dari terkecil ke terbesar adalah kegiatan mengurutkan pecahan."
+  },
+  {
+    id: 14, type: 'single',
+    question: "Menentukan pecahan mana yang lebih besar dari dua pecahan termasuk ...",
+    options: ["Membandingkan pecahan", "Mengurutkan pecahan"],
+    correctAnswer: "Membandingkan pecahan",
+    discussion: "Menentukan pecahan mana yang lebih besar adalah kegiatan membandingkan dua pecahan."
+  },
+  {
+    id: 15, type: 'single',
+    question: "Menyusun 1/4, 3/4, 2/4 dari terbesar ke terkecil termasuk ...",
+    options: ["Membandingkan pecahan", "Mengurutkan pecahan"],
+    correctAnswer: "Mengurutkan pecahan",
+    discussion: "Menyusun beberapa pecahan dari terbesar ke terkecil adalah kegiatan mengurutkan pecahan."
+  }
+];
 
 export default function App() {
   const [screen, setScreen] = useState('login');
@@ -412,7 +664,8 @@ export default function App() {
   const handleSelectDayForQuiz = (day: number) => {
     if (day === 1) setActiveQuestions(QUESTIONS_DAY1);
     else if (day === 2) setActiveQuestions(QUESTIONS_DAY2);
-    else if (day === 3) setActiveQuestions(QUESTIONS_DAY3); // Added day 3
+    else if (day === 3) setActiveQuestions(QUESTIONS_DAY3);
+    else if (day === 4) setActiveQuestions(QUESTIONS_DAY4_NEW); // Menggunakan soal baru hari 4
 
     setSelectedDay(day);
     startQuiz();
@@ -718,6 +971,24 @@ export default function App() {
             </div>
             <ArrowRight className="text-[#0F2854]/30 group-hover:text-[#0F2854] transition-colors" />
           </button>
+
+          {/* Tombol Hari 4 */}
+          <button
+              onClick={() => {
+                if (contentType === 'material') { setSelectedDay(4); setScreen('material'); }
+                else { handleSelectDayForQuiz(4); }
+              }}
+              className="w-full text-left p-6 rounded-[24px] bg-white border border-[#0F2854]/5 shadow-sm transition-all duration-300 flex items-center gap-6 group hover:shadow-lg hover:border-[#0F2854]/30 hover:-translate-y-1"
+          >
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg transition-colors bg-[#FFF8DE] text-[#0F2854] group-hover:bg-[#0F2854] group-hover:text-[#FFF8DE]">4</div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold mb-1 text-[#0F2854]">Hari 4: Membandingkan & Mengurutkan Pecahan</h3>
+              <p className="text-xs opacity-60 font-medium text-[#0F2854]">
+                Perbandingan, Penyebut Sama/Beda, Urutan, Soal Cerita
+              </p>
+            </div>
+            <ArrowRight className="text-[#0F2854]/30 group-hover:text-[#0F2854] transition-colors" />
+          </button>
         </div>
       </div>
   );
@@ -768,7 +1039,7 @@ export default function App() {
       </div>
   );
 
-  // --- KONTEN HARI 1 (PERSIS SESUAI PERMINTAAN) ---
+  // --- KONTEN HARI 1 (TETAP SAMA) ---
   const renderMaterialDay1 = () => (
       <>
         <section>
@@ -882,7 +1153,7 @@ export default function App() {
       </>
   );
 
-  // --- KONTEN HARI 2 (PERSIS SESUAI TEKS ANDA) ---
+  // --- KONTEN HARI 2 (TETAP SAMA) ---
   const renderMaterialDay2 = () => (
       <>
         <section>
@@ -1049,7 +1320,7 @@ export default function App() {
       </>
   );
 
-  // --- KONTEN HARI 3 (BARU) ---
+  // --- KONTEN HARI 3 (TETAP SAMA) ---
   const renderMaterialDay3 = () => (
       <>
         <section>
@@ -1057,7 +1328,7 @@ export default function App() {
           <p className="text-[#0F2854]/80 text-base leading-relaxed mb-4">
             Pecahan adalah bilangan yang menyatakan bagian dari keseluruhan.
           </p>
-          <div className="bg-white p-6 rounded-xl border border-[#0F2854]/10 text-center shadow-sm">
+          <div className="bg-white p-6 rounded-xl border border-[#0F2854]/10 text-center">
             <p className="text-sm text-[#0F2854]/70 mb-2">Contoh: 1 buah kue dibagi menjadi 4 bagian sama besar. Jika diambil 1 bagian, ditulis:</p>
             <div className="inline-block bg-[#FFF8DE] px-8 py-4 rounded-lg border border-[#0F2854]/20">
               <span className="text-3xl font-bold text-[#0F2854]">1/4</span>
@@ -1200,6 +1471,201 @@ export default function App() {
       </>
   );
 
+  // --- KONTEN HARI 4 (TETAP SAMA) ---
+  const renderMaterialDay4 = () => (
+      <>
+        <section>
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">1. Membandingkan Dua Pecahan</h3>
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm mb-6">
+            <h4 className="font-bold text-[#0F2854] mb-2 text-lg">🔹 Apa itu Membandingkan Pecahan?</h4>
+            <p className="text-[#0F2854]/80 text-sm mb-3">
+              Membandingkan pecahan artinya menentukan pecahan mana yang lebih besar, lebih kecil, atau sama besar.
+            </p>
+            <div className="bg-[#FFF8DE] p-4 rounded-lg text-center">
+              <p className="font-bold text-[#0F2854] mb-2">Tanda yang digunakan:</p>
+              <div className="flex justify-center gap-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-[#0F2854] mb-1"></div>
+                  <div className="text-xs text-[#0F2854]/70">lebih besar</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-[#0F2854] mb-1">&lt;</div>
+                  <div className="text-xs text-[#0F2854]/70">lebih kecil</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-[#0F2854] mb-1">=</div>
+                  <div className="text-xs text-[#0F2854]/70">sama dengan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">2. Membandingkan Pecahan dengan Penyebut Sama</h3>
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+            <h4 className="font-bold text-[#0F2854] mb-2">📌 Aturan Utama:</h4>
+            <p className="text-[#0F2854]/80 text-sm mb-4">
+              Jika penyebutnya sama, maka <strong>bandingkan pembilangnya saja</strong>.
+            </p>
+            <div className="bg-[#FFF8DE] p-4 rounded-lg border-l-4 border-[#0F2854]">
+              <p className="font-bold text-sm text-[#0F2854] mb-2">Contoh: Bandingkan 3/8 dan 5/8</p>
+              <div className="text-sm text-[#0F2854] space-y-2">
+                <p>• Penyebut sama: 8</p>
+                <p>• Pembilang: 3 dan 5</p>
+                <p>• Karena 5 &gt; 3, maka:</p>
+                <div className="text-center text-xl font-bold text-[#0F2854] bg-white p-3 rounded-lg mt-2">
+                  5/8 &gt; 3/8
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">3. Membandingkan Pecahan dengan Penyebut Berbeda</h3>
+
+          <div className="space-y-6">
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854] mb-2">🔹 Cara 1: Menyamakan Penyebut</h4>
+              <p className="text-[#0F2854]/80 text-sm mb-3">Samakan penyebut dengan mencari KPK, lalu bandingkan pembilang.</p>
+              <div className="bg-[#FFF8DE] p-4 rounded-lg">
+                <p className="font-bold text-sm text-[#0F2854] mb-2">Contoh: Bandingkan 1/2 dan 1/3</p>
+                <div className="text-sm text-[#0F2854] space-y-2">
+                  <p>1. KPK dari 2 dan 3 adalah 6</p>
+                  <p>2. Ubah pecahan:</p>
+                  <p className="ml-4">• 1/2 = 3/6 (atas bawah dikali 3)</p>
+                  <p className="ml-4">• 1/3 = 2/6 (atas bawah dikali 2)</p>
+                  <p>3. Bandingkan: 3/6 vs 2/6</p>
+                  <p>4. Karena 3 &gt; 2, maka:</p>
+                  <div className="text-center text-xl font-bold text-[#0F2854] bg-white p-3 rounded-lg mt-2">
+                    1/2 &gt; 1/3
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854] mb-2">🔹 Cara 2: Perkalian Silang (Cara Cepat)</h4>
+              <p className="text-[#0F2854]/80 text-sm mb-3">Kalikan pembilang dengan penyebut lawan, lalu bandingkan hasilnya.</p>
+              <div className="bg-[#FFF8DE] p-4 rounded-lg">
+                <p className="font-bold text-sm text-[#0F2854] mb-2">Contoh: Bandingkan 2/3 dan 3/4</p>
+                <div className="text-sm text-[#0F2854] space-y-2">
+                  <p>1. Perkalian silang:</p>
+                  <p className="ml-4">• 2 × 4 = 8</p>
+                  <p className="ml-4">• 3 × 3 = 9</p>
+                  <p>2. Bandingkan hasil: 9 &gt; 8</p>
+                  <p>3. Karena 9 &gt; 8, maka:</p>
+                  <div className="text-center text-xl font-bold text-[#0F2854] bg-white p-3 rounded-lg mt-2">
+                    3/4 &gt; 2/3
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">4. Mengurutkan Pecahan</h3>
+
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm mb-6">
+            <h4 className="font-bold text-[#0F2854] mb-2">🔹 Langkah-langkah Mengurutkan Pecahan</h4>
+            <div className="grid gap-3 mt-4">
+              <div className="flex items-center gap-4 bg-[#FFF8DE]/50 p-3 rounded-lg">
+                <span className="w-8 h-8 rounded-full bg-[#0F2854] text-[#FFF8DE] flex items-center justify-center font-bold text-sm">1</span>
+                <span className="font-bold text-[#0F2854]">Samakan penyebut semua pecahan (cari KPK)</span>
+              </div>
+              <div className="flex items-center gap-4 bg-[#FFF8DE]/50 p-3 rounded-lg">
+                <span className="w-8 h-8 rounded-full bg-[#0F2854] text-[#FFF8DE] flex items-center justify-center font-bold text-sm">2</span>
+                <span className="font-bold text-[#0F2854]">Bandingkan pembilangnya</span>
+              </div>
+              <div className="flex items-center gap-4 bg-[#FFF8DE]/50 p-3 rounded-lg">
+                <span className="w-8 h-8 rounded-full bg-[#0F2854] text-[#FFF8DE] flex items-center justify-center font-bold text-sm">3</span>
+                <span className="font-bold text-[#0F2854]">Urutkan sesuai perintah (terkecil ke terbesar atau sebaliknya)</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+            <h4 className="font-bold text-[#0F2854] mb-2">📌 Contoh: Urutkan dari terkecil ke terbesar: 1/2, 1/4, 3/4</h4>
+            <div className="bg-[#FFF8DE] p-4 rounded-lg mt-3">
+              <div className="text-sm text-[#0F2854] space-y-2">
+                <p>1. Samakan penyebut (KPK dari 2, 4, 4 = 4):</p>
+                <p className="ml-4">• 1/2 = 2/4</p>
+                <p className="ml-4">• 1/4 = 1/4</p>
+                <p className="ml-4">• 3/4 = 3/4</p>
+                <p>2. Bandingkan pembilang: 1, 2, 3</p>
+                <p>3. Urutan terkecil ke terbesar:</p>
+                <div className="text-center text-xl font-bold text-[#0F2854] bg-white p-3 rounded-lg mt-2">
+                  1/4, 1/2, 3/4
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">5. Contoh Soal Cerita</h3>
+
+          <div className="space-y-4">
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854]">📝 Contoh 1 (Perbandingan)</h4>
+              <p className="text-sm text-[#0F2854]/80 italic mb-2">Ani minum 1/2 gelas susu. Budi minum 3/4 gelas susu. Siapa yang minum lebih banyak?</p>
+              <div className="bg-[#FFF8DE] p-3 rounded text-sm text-[#0F2854]">
+                <p className="font-bold mb-2">Penyelesaian:</p>
+                <p>Samakan penyebut: 1/2 = 2/4, 3/4 = 3/4</p>
+                <p>Bandingkan: 3/4 &gt; 2/4</p>
+                <p className="font-bold text-green-700 mt-2">✅ Jadi, Budi minum lebih banyak.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-5 rounded-xl border border-[#0F2854]/10 shadow-sm">
+              <h4 className="font-bold text-[#0F2854]">📝 Contoh 2 (Mengurutkan)</h4>
+              <p className="text-sm text-[#0F2854]/80 italic mb-2">Urutkan pecahan berikut dari terkecil ke terbesar: 2/3, 1/3, 3/3</p>
+              <div className="bg-[#FFF8DE] p-3 rounded text-sm text-[#0F2854]">
+                <p className="font-bold mb-2">Penyelesaian:</p>
+                <p>Penyebut sudah sama (3), bandingkan pembilang: 1, 2, 3</p>
+                <p>Urutan terkecil: 1/3, 2/3, 3/3</p>
+                <p className="font-bold text-green-700 mt-2">✅ Jawaban: 1/3, 2/3, 3/3</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <h3 className="text-xl font-extrabold text-[#0F2854] mb-4 border-l-4 border-[#0F2854] pl-4">6. Kesalahan yang Sering Terjadi</h3>
+
+          <div className="bg-red-50 border border-red-200 p-5 rounded-xl">
+            <h4 className="font-bold text-red-700 mb-2">❌ Kesalahan Umum:</h4>
+            <p className="text-sm text-red-600 mb-3">
+              Mengira penyebut besar berarti pecahan besar.
+            </p>
+            <div className="bg-white p-4 rounded-lg border border-red-100">
+              <p className="font-bold text-[#0F2854] mb-2">📌 Contoh perbandingan yang salah:</p>
+              <p className="text-sm text-[#0F2854]">"10 lebih besar dari 4, jadi 1/10 lebih besar dari 1/4" → <strong>SALAH</strong></p>
+              <div className="mt-3 p-3 bg-[#FFF8DE] rounded-lg">
+                <p className="font-bold text-[#0F2854]">✅ Yang benar:</p>
+                <p className="text-sm text-[#0F2854]">Pembilang sama (1), penyebut lebih kecil (4) berarti pecahan lebih besar.</p>
+                <div className="text-center text-lg font-bold text-green-700 mt-2">
+                  1/4 &gt; 1/10
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0F2854] text-[#FFF8DE] p-6 rounded-2xl shadow-lg mt-8">
+          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">🧠 Ringkasan Materi</h3>
+          <ul className="list-disc list-inside space-y-2 text-sm opacity-90">
+            <li>Penyebut sama → bandingkan pembilang</li>
+            <li>Penyebut berbeda → samakan penyebut atau gunakan perkalian silang</li>
+            <li>Untuk mengurutkan: samakan penyebut dulu, lalu urutkan pembilang</li>
+            <li>Pecahan dengan penyebut lebih kecil (pembilang sama) nilainya lebih besar</li>
+          </ul>
+        </section>
+      </>
+  );
+
   const renderMaterial = () => (
       <div className="min-h-screen bg-white font-sans">
         <div className="bg-[#0F2854] px-6 py-4 text-[#FFF8DE] flex items-center gap-4 sticky top-0 z-20 shadow-md">
@@ -1214,6 +1680,7 @@ export default function App() {
           {selectedDay === 1 && renderMaterialDay1()}
           {selectedDay === 2 && renderMaterialDay2()}
           {selectedDay === 3 && renderMaterialDay3()}
+          {selectedDay === 4 && renderMaterialDay4()}
         </div>
         <div className="fixed bottom-0 w-full bg-white border-t border-[#0F2854]/10 p-4 z-20">
           <div className="max-w-3xl mx-auto">
